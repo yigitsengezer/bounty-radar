@@ -1,4 +1,4 @@
-# 🕵️‍♂️ bounty-scope
+# 🕵️‍♂️ bounty-radar
 
 Track **Bug Bounty program scopes** in real time.  
 This tool fetches program data from [HackerOne public dataset](https://github.com/arkadiyt/bounty-targets-data), detects **added/removed in-scope assets**, and maintains a **live Excel file** of currently active assets.  
@@ -22,8 +22,8 @@ All state is stored in a local **SQLite database**.
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/username/bounty-scope.git
-cd bounty-scope
+git clone https://github.com/username/bounty-radar.git
+cd bounty-radar
 pip install -r requirements.txt
 ```
 
@@ -44,7 +44,7 @@ pip install requests pandas openpyxl rich
 ## 🚀 Usage
 
 ```bash
-python bounty-scope.py [options]
+python bounty-radar.py [options]
 ```
 
 ### Options
@@ -59,12 +59,12 @@ python bounty-scope.py [options]
 
 Run with defaults (Excel = `new_assets.xlsx`, DB = `assets.db`, interval = 60s):
 ```bash
-python bounty-scope.py
+python bounty-radar.py
 ```
 
 Use a custom Excel file and DB:
 ```bash
-python bounty-scope.py -o bugbounty_assets.xlsx --db bounty.db -i 30
+python bounty-radar.py -o bugbounty_assets.xlsx --db bounty.db -i 30
 ```
 
 ---
