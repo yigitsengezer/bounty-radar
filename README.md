@@ -22,7 +22,7 @@ All state is stored in a local **SQLite database**.
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/username/bounty-radar.git
+git clone https://github.com/yigitsengezer/bounty-radar.git
 cd bounty-radar
 pip install -r requirements.txt
 ```
